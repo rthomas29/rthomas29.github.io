@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Rakeem Makes a Site"
 date: 2016-12-21
 ---
