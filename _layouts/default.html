@@ -4,31 +4,32 @@
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			<!-- Latest compiled and minified CSS -->
+			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
 			 integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+			 <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 		</head>
 		<body>
-			<nav>
+		<div class="container">
+			<nav class="pull-right">
 	    		<ul>
-	    			<span class="pull-left"><li><a href="/">RT</a></li></span>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
 	        		<li><a href="/blog">Blog</a></li>
+		        	<li><a href="/resume">Resume</a></li>
+	        		<li><a href="/projects">Projects</a></li>
+	        		<li><a href="/contact">Contact</a></li>
 	    		</ul>
 			</nav>
-			<div class="container">
-			
-			{{ content }}
-		
+		</div>
+			<div class="container-fluid my-blurb">
+				<div class="row">
+						<div class="text-center">
+							{{ content }}
+						</div>
+				</div>
 			</div><!-- /.container -->
 			<footer>
-	    			<ul>
-					<li><a href="https://twitter.com/rthom4s">twitter</a></li>
-					<li><a href="https://codepen.io/rthomas29/">codepen</a></li>
-					<li><a href="https://github.com/rthomas29">github</a></li>
-				</ul>
+	    	
 			</footer>
 			<script id="dsq-count-scr" src="//raksite.disqus.com/count.js" async></script>
 		</body>

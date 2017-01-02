@@ -1,6 +1,25 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+    max-width: 100%;
+    font-family: 'Helvetica';
+}
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+}
+div.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+div.myblurb {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.nav-header{
+    padding: 5%;
+    margin: 5px auto 15px auto;
+    background-color: #6C7A89;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -10,7 +29,27 @@ nav ul, footer ul {
 }
 nav ul li, footer ul li {
     display: inline;
-    margin-right: 20px;
+    padding: 10px;
+}
+
+ul.icons>li {
+    margin: 15px;
+}
+.fa-twitter, .fa-twitter-square {
+    color: #00aced
+}
+
+.fa-github, .fa-github-square {
+    color: black;
+}
+
+.fa-free-code-camp, .fa-free-code.camp {
+    color: #016101; 
+}
+
+img.icon-img {
+    max-height: 50px;
+    max-width: 37px;
 }
 a {
     text-decoration: none;
@@ -29,7 +68,7 @@ p {
     color: #333;
 }
 footer {
-    border-top: 1px solid #d5d5d5;
+    /*border-top: 1px solid #d5d5d5;*/
     font-size: .8em;
 }
 
