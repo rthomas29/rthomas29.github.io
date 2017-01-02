@@ -16,10 +16,12 @@ div.myblurb {
     margin-right: auto;
     margin-left: auto;
 }
-.nav-header{
-    padding: 5%;
+.nav-header {
     margin: 5px auto 15px auto;
     background-color: #6C7A89;
+}
+.navbar {
+    padding-top: 10px;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -51,12 +53,20 @@ img.icon-img {
     max-height: 50px;
     max-width: 37px;
 }
+img.rakeem-pic {
+    max-height: 250px;
+    max-width: 250px;
+}
 a {
     text-decoration: none;
-    color: #999;
+    color: white;
+}
+
+.navbar a {
+    font-size: 1.5em;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 h1 {
     font-size: 3em;
@@ -79,4 +89,8 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+p.helper-text {
+    margin-top: 60px;
 }
