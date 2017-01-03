@@ -10,14 +10,15 @@ comments: true
 </nav>
 	<h1 class="text-center">{{ page.title }}</h1>
 	<p class="meta">{{ page.date | date_to_string }}</p>
-
+	
 	<div class="post">
 	  {{ content }}
 	</div>
 
-	{% if page.comments %} <a href="https://rthomas29.github.io{{ page.url }}#disqus_thread"></a>{% endif %}
-
-
 	{% include disqus.html %}
+
+	{% if page.comments %} 
+	<a href="https://rthomas29.github.io/index.html#disqus_thread"></a>
+	{% endif %}
 
 </div>
