@@ -1,6 +1,8 @@
 body {
     max-width: 100%;
-    font-family: 'Helvetica';
+    font-family: 'Inconsolata', monospace;
+    font-size: 100%;
+    font-weight: 400%;
     padding: 0;
     margin: 0;
     overflow: hidden;
@@ -8,7 +10,10 @@ body {
 h3 {
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: white;
+}
+
+.head-color {
+    font-color: white;
 }
 div.container {
     margin-right: auto;
@@ -27,7 +32,6 @@ div.container {
     padding-top: 10px;
 }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -74,7 +78,6 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
     font-size: 1.5em;
