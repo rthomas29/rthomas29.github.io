@@ -61,6 +61,8 @@ img.icon-img {
 img.rakeem-pic {
     max-height: 250px;
     max-width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 a {
     text-decoration: none;
