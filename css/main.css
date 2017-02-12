@@ -1,3 +1,4 @@
+/* global */
 body {
     max-width: 100%;
     font-family: 'Inconsolata', monospace;
@@ -5,26 +6,45 @@ body {
     font-weight: 400%;
     overflow: scroll;
 }
-h3 {
-    text-transform: uppercase;
-    letter-spacing: 3px;
+
+h1 {
+    font-size: 3em;
+}
+p {
+    font-size: 1.5em;
+    line-height: 2.5em;
+    color: #333;
 }
 
-.head-color {
-    font-color: white;
+a {
+    text-decoration: none;
+    color: black;
 }
+
+footer {
+    font-size: .8em;
+}
+
 div.container {
     margin-right: auto;
     margin-left: auto;
 }
-/*div.myblurb {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}*/
+
+.section-header {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* name div */
+#name-jumbotron {
+    margin: 60px auto 60px auto;
+    font-weight: bold;
+}
+
+/* nav section */
 .nav-header {
     margin: 0px auto 15px auto;
-    background-color: #6C7A89;
 }
 .navbar {
     padding-top: 10px;
@@ -42,18 +62,8 @@ nav ul li, footer ul li {
 ul.icons>li {
     margin: 15px;
 }
-.fa-twitter, .fa-twitter-square {
-    color: #00aced
-}
 
-.fa-github, .fa-github-square {
-    color: black;
-}
-
-.fa-free-code-camp, .fa-free-code.camp {
-    color: #016101; 
-}
-
+/* images */
 img.icon-img {
     max-height: 50px;
     max-width: 37px;
@@ -64,32 +74,26 @@ img.rakeem-pic {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-a {
-    text-decoration: none;
+
+img.projects {
+    max-width: 100%;
+    max-height: 100%;
 }
-nav>ul>li>a {
-    color: white;
-}
-.navbar a {
-    font-size: 1.5em;
-}
+
+/* links */
+
 a:hover {
     text-decoration: none;
+    color: black;
 }
-h1 {
-    font-size: 3em;
+nav>ul>li>a {
+    color: black;
 }
-p {
+.navbar a, .nav-header.icon {
     font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
 }
 
-footer {
-    /*border-top: 1px solid #d5d5d5;*/
-    font-size: .8em;
-}
-
+/* lists */
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
@@ -99,8 +103,15 @@ ul.posts li {
     list-style: none;
 }
 
-.row>.col-sm-12>h3.about-blurb {
-    text-decoration: underline;
-    text-decoration-color: #6C7A89;
+/* footer */
+.fa-twitter, .fa-twitter-square {
+    color: #00aced
+}
+
+.fa-github, .fa-github-square {
     color: black;
+}
+
+.fa-free-code-camp, .fa-free-code.camp {
+    color: #016101; 
 }
