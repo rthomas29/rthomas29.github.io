@@ -35,13 +35,6 @@ div.container {
     margin-bottom: 20px;
 }
 
-
-/* name div */
-#name-jumbotron {
-    margin: 60px auto 60px auto;
-    font-weight: bold;
-}
-
 /* nav section */
 .nav-header {
     margin: 0px auto 15px auto;
@@ -62,6 +55,16 @@ nav ul li, footer ul li {
 ul.icons>li {
     margin: 15px;
 }
+
+/* work section */
+
+
+/* name div */
+#name-jumbotron {
+    margin: 60px auto 60px auto;
+    font-weight: bold;
+}
+
 
 /* images */
 img.icon-img {
