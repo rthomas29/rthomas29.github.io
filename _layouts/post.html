@@ -2,25 +2,28 @@
 layout: default
 comments: true
 ---
-<div class="container-fluid">
-<nav class="clearfix">
-	<p class="text-primary pull-left">
-		<a href="../../../../index.html">Back to site</a>
-	</p>
-</nav>
-	<header class="text-center">
-		<h1>{{ page.title }}</h1>
-		<small>{{ page.date | date_to_string }}</small>	
-	</header>
-	
-	<div class="post">
-	  {{ content }}
-	</div>
+	<nav id="myNav" class="navbar nav-header text-center">
+		<ul>
+			<span class="pull-left"><li><a href="../../../../index.html"><i class="fa fa-home fa-2x nav-icon" aria-hidden="true"></i></a></li></span>
 
-	{% include disqus.html %}
+		</ul>
+	</nav>
 
-	{% if page.comments %} 
-	<a href="https://rthomas29.github.io/index.html#disqus_thread"></a>
-	{% endif %}
+		<header class="text-center post-header-font">
+			<h1 class="section-header">{{ page.title }}</h1>
+			<!-- <p>{{ page.date | date_to_string }}</p> -->
+		</header>
 
-</div>
+		<div class="page-meat">
+			<div class="container">
+				<div class="post">
+					{{ content }}
+				</div>
+
+		{% include disqus.html %}
+
+		{% if page.comments %} 
+		<a href="https://rthomas29.github.io/index.html#disqus_thread"></a>
+		{% endif %}
+
+		</div>

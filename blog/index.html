@@ -2,14 +2,24 @@
 layout: default
 title: Correct Me If I'm Wrong
 ---
-<div class="container">
-	<div class="">
-		<h1>{{ page.title }}</h1>
-			<ul class="posts">
-	  		{% for post in site.posts %}
-	    		<li><span class="pull-left">{{ post.date | date_to_string }}</span><br>
-	    		<small>{{ post.excerpt }}<a href="{{ post.url }}" title="{{ post.title }}">Read more..</a></small></li>
-  			{% endfor %}
-			</ul>
+<nav id="myNav" class="navbar nav-header text-center">
+		<ul>
+			<span class="pull-left"><li><a href="../../../../index.html"><i class="fa fa-home fa-2x nav-icon" aria-hidden="true"></i></a></li></span>
+			<!-- <span class="pull-right">
+				<li><a href="blog/index.html">Blog</a></li>
+    			<li><a href="#project-section">Projects</a></li>
+			</span> -->
+		</ul>
+	</nav>
+
+		<h1 class="text-center section-header post-header-font">{{ page.title }}</h1>
+	<div class="page-meat">
+			<div class="container">
+				<ul class="posts">
+			  		{% for post in site.posts %}
+			    		<li><span class="pull-left">{{ post.date | date_to_string }}</span><br>
+			    		<small class="post-link">{{ post.excerpt }}<a href="{{ post.url }}" title="{{ post.title }}"><i class="fa fa-book fa-2x" aria-hidden="true"></i> More...</a></small></li>
+		  			{% endfor %}
+				</ul>
+		</div>
 	</div>
-</div>

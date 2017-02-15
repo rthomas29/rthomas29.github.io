@@ -1,28 +1,31 @@
 /* global */
 body {
     max-width: 100%;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 100%;
     font-weight: 400%;
     overflow: scroll;
+    margin-bottom: 0px;
 }
 
-h1 {
-    font-size: 3em;
+p.about-blurb {
+    font-size: 2em;
+    line-height: 3em;
 }
+
 p {
     font-size: 1.5em;
     line-height: 2.5em;
-    color: #333;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #ECF0F1;
 }
 
 footer {
     font-size: .8em;
+    overflow: hidden;
 }
 
 div.container {
@@ -30,17 +33,29 @@ div.container {
     margin-left: auto;
 }
 
+div.page-meat {
+    background-color: #EC644B;
+    background-size: cover;
+    color: #ECF0F1;
+}
 .section-header {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3em;
     font-weight: bold;
-    margin-bottom: 20px;
 }
 
 /* nav section */
 .nav-header {
     margin: 0px auto 15px auto;
 }
+.nav-header a {
+    color: #EC644B;
+}
 .navbar {
-    padding-top: 10px;
+    padding-top: 0px;
 }
 nav ul, footer ul {
     padding: 0px;
@@ -56,13 +71,26 @@ ul.icons>li {
     margin: 15px;
 }
 
-/* work section */
+/* main page header */
+#name-jumbotron {
+    color: #EC644B;
+}
 
+#name-jumbotron h1 {
+    font-size: 60px;
+}
 
 /* name div */
 #name-jumbotron {
     margin: 60px auto 60px auto;
     font-weight: bold;
+}
+
+/* about section */
+
+#about-section .about-title {
+    padding-top: 0px;
+    margin-top: 30px;
 }
 
 
@@ -74,7 +102,7 @@ img.icon-img {
 img.rakeem-pic {
     max-height: 250px;
     max-width: 250px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 
@@ -83,7 +111,19 @@ img.projects {
     max-height: 100%;
 }
 
+/* projects section */
+#project-section small {
+    font-size: 10px;
+}
+
 /* links */
+.social-links {
+    color: #F4D03F;
+}
+a:hover .nav-icon {
+    text-decoration: none;
+    color: #F4D03F;
+}
 
 a:hover {
     text-decoration: none;
@@ -117,4 +157,14 @@ ul.posts li {
 
 .fa-free-code-camp, .fa-free-code.camp {
     color: #016101; 
+}
+
+
+/* Post pages */
+.post-link a {
+    color: #F4D03F;
+}
+
+.post-header-font {
+    color: #EC644B;
 }
