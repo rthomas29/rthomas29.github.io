@@ -1,1 +1,1 @@
-### [rakeemthomas.com](https://www.rakeemthomas.com)
+### [rakeemthomas.com](http://www.rakeemthomas.com)
