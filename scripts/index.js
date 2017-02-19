@@ -2,7 +2,7 @@
 // TODO: change color layout. Peach for links, dark blue background in place of white.
 
 document.addEventListener('DOMContentLoaded', (event) => {
-  const subHeadingArray = ['Software Developer', 'Learner', 'Boyfriend', 'Brother', 'Friend'];
+  const subHeadingArray = ['Web Developer', 'JavaScript Enthusiast', 'Learner'];
   const subHeadingEl = document.getElementById('subheading');
   let index = 0;
     setInterval(function () {
