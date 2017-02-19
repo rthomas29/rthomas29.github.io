@@ -1,28 +1,30 @@
-// Add scrollspy to <body>
+// TODO: have titles transition on front page. e.g. developer, learner, etc. 
+// TODO: change color layout. Peach for links, dark blue background in place of white.
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const subHeadingArray = ['Software Developer', 'Learner', 'Boyfriend', 'Brother', 'Friend'];
+  const subHeadingEl = document.getElementById('subheading');
+  let index = 0;
+    setInterval(function () {
+      subHeadingEl.textContent = subHeadingArray[index];
+      index = (index + 1) % subHeadingArray.length;
+    }, 3500);
+})
+
 $('body').scrollspy({target: ".navbar", offset: 50});
 
-// Add smooth scrolling on all links inside the navbar
 $("#myNav a").on('click', function(event) {
 
-  // Make sure this.hash has a value before overriding default behavior
   if (this.hash !== "") {
 
-    // Prevent default anchor click behavior
     event.preventDefault();
 
-    // Store hash
     var hash = this.hash;
 
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
     $('html, body').animate({
       scrollTop: $(hash).offset().top
     }, 900, function(){
-
-    // Add hash (#) to URL when done scrolling (default click behavior)
       window.location.hash = hash;
     });
-
-  } // End if
-
+  } 
 });

@@ -6,6 +6,7 @@ body {
     font-weight: 400%;
     overflow: scroll;
     margin-bottom: 0px;
+    background-color: #F2F1EF;
 }
 
 p.about-blurb {
@@ -34,9 +35,9 @@ div.container {
 }
 
 div.page-meat {
-    background-color: #EC644B;
+    background-color: #F2F1EF;
     background-size: cover;
-    color: #ECF0F1;
+    color: #6C7A89;
 }
 .section-header {
     margin-top: 70px;
@@ -45,14 +46,19 @@ div.page-meat {
     margin-right: auto;
     font-size: 3em;
     font-weight: bold;
+    color: #6C7A89;
 }
 
+.page-header {
+    border-color: #6C7A89;
+}
 /* nav section */
-.nav-header {
+div.nav-header {
     margin: 0px auto 15px auto;
+    /*background-color: #4B77BE;*/
 }
 .nav-header a {
-    color: #EC644B;
+    color: #F4B350;
 }
 .navbar {
     padding-top: 0px;
@@ -71,19 +77,17 @@ ul.icons>li {
     margin: 15px;
 }
 
-/* main page header */
-#name-jumbotron {
-    color: #EC644B;
-}
-
 #name-jumbotron h1 {
     font-size: 60px;
 }
 
 /* name div */
+
 #name-jumbotron {
     margin: 60px auto 60px auto;
     font-weight: bold;
+    color: #F4B350;
+    /*background-color: #4B77BE*/;
 }
 
 /* about section */
@@ -120,18 +124,15 @@ img.projects {
 .social-links {
     color: #F4D03F;
 }
-a:hover .nav-icon {
+
+.nav-icon:hover {
+    color: #F4D03F;
+}
+a:hover {
     text-decoration: none;
     color: #F4D03F;
 }
 
-a:hover {
-    text-decoration: none;
-    color: black;
-}
-nav>ul>li>a {
-    color: black;
-}
 .navbar a, .nav-header.icon {
     font-size: 1.5em;
 }
@@ -155,8 +156,8 @@ ul.posts li {
     color: black;
 }
 
-.fa-free-code-camp, .fa-free-code.camp {
-    color: #016101; 
+.fa-linkedin {
+    color: black; 
 }
 
 
@@ -164,7 +165,6 @@ ul.posts li {
 .post-link a {
     color: #F4D03F;
 }
-
 .post-header-font {
-    color: #EC644B;
+    color: #F4B350;
 }
