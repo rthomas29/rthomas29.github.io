@@ -1,6 +1,3 @@
-// TODO: have titles transition on front page. e.g. developer, learner, etc. 
-// TODO: change color layout. Peach for links, dark blue background in place of white.
-
 document.addEventListener('DOMContentLoaded', (event) => {
   const subHeadingArray = ['Web Developer', 'JavaScript Enthusiast', 'Learner'];
   const subHeadingEl = document.getElementById('subheading');
