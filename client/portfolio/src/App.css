@@ -1,13 +1,21 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
+.About-Div {
+  display: flex;
+  justify-content: center;
+}
+
+.About-Div img {
+  border-radius: 10%;
+}
 .Social-Links {
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  text-align: center;
 }
 
 .Social-Links li {
@@ -16,8 +24,10 @@
 
 .Social-Links a {
   text-decoration: none;
+  color: white;
 }
 
-.Social-Links a:hover {
-  color: red;
+.Social-Div {
+  display: flex;
+  justify-content: center;
 }
