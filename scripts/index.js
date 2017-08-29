@@ -14,7 +14,7 @@ const scrollSpyFunc = () => {
 }
 
 const subHeadingFunc = () => {
-  const subHeadingArray = ['JavaScript Enthusiast', 'Life Learner', 'Web Developer'];
+  const subHeadingArray = ['Life Learner', 'Web Developer'];
   const subHeadingEl = document.getElementById('subheading');
   let index = 0;
     setInterval(() => {
