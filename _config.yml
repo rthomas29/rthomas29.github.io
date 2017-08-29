@@ -1,5 +1,6 @@
 name: Rak's Profile
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+baseUrl: /rthomas29.github.io
 gems:
   - jemoji
