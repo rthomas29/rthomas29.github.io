@@ -119,18 +119,19 @@ img.projects {
 #project-section small {
     display: flex;
     font-size: 10px;
-    justify-content: center;
 }
 
 .project-images {
     display: flex;
-    flex-grow: 1;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
 }
 
-.flex-child {
+ .flex-child {
     flex-flow: row;
+    /* max-width: 50%; */
     justify-content: center;
-    max-width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -156,8 +157,8 @@ a:hover {
 }
 
 /* lists */
-ul.posts { 
-    margin: 20px auto 40px; 
+ul.posts {
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 
@@ -175,7 +176,7 @@ ul.posts li {
 }
 
 .fa-linkedin {
-    color: black; 
+    color: black;
 }
 
 
