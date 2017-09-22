@@ -12,9 +12,10 @@ title: The Mind of Rakeem
 	<div class="page-meat">
 			<div class="container">
 				<ul class="posts">
-			  		{% for post in site.posts %}
-			    		<li><span class="pull-left">{{ post.date | date_to_string }}</span><br>
-			    		<small class="post-link">{{ post.excerpt }}<a href="{{ post.url }}" title="{{ post.title }}"><i class="fa fa-book fa-2x" aria-hidden="true"></i> More...</a></small></li>
+						{% for post in site.posts %}
+							<h3>{{ post.title }} - {{ post.date | date_to_string }}</h3>
+			    		<li>
+			    		<small class="post-link">{{ post.excerpt }}<a href="{{ post.url }}"><i class="fa fa-book fa-2x" aria-hidden="true"></i> More...</a></small></li>
 		  			{% endfor %}
 				</ul>
 		</div>
