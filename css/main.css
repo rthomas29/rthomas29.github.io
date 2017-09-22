@@ -1,189 +1,183 @@
 /* global */
 body {
-    max-width: 100%;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 100%;
-    font-weight: 400%;
-    overflow: scroll;
-    margin-bottom: 0px;
-    background-color: #F2F1EF;
+  max-width: 100%;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 100%;
+  font-weight: 400%;
+  overflow: scroll;
+  margin-bottom: 0px;
+  background-color: #f2f1ef;
 }
 
 p.about-blurb {
-    font-size: 2em;
-    line-height: 3em;
+  font-size: 2em;
+  line-height: 3em;
 }
 
 p {
-    font-size: 1.5em;
-    line-height: 2.5em;
+  font-size: 1.5em;
+  line-height: 2.5em;
 }
 
 a {
-    text-decoration: none;
-    color: #F4D03F;
+  text-decoration: none;
+  color: #f4d03f;
 }
 
 footer {
-    font-size: .8em;
-    overflow: hidden;
+  font-size: 0.8em;
+  overflow: hidden;
 }
 
 div.container {
-    margin-right: auto;
-    margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 div.page-meat {
-    background-color: #F2F1EF;
-    background-size: cover;
-    color: #6C7A89;
+  background-color: #f2f1ef;
+  background-size: cover;
+  color: #6c7a89;
 }
 .section-header {
-    margin-top: 70px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 3em;
-    font-weight: bold;
-    color: #6C7A89;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3em;
+  font-weight: bold;
+  color: #6c7a89;
 }
 
 .page-header {
-    border-color: #6C7A89;
+  border-color: #6c7a89;
 }
 /* nav section */
 div.nav-header {
-    margin: 0px auto 15px auto;
-    /*background-color: #4B77BE;*/
+  margin: 0px auto 15px auto;
+  /*background-color: #4B77BE;*/
 }
 .nav-header a {
-    color: #F4B350;
+  color: #f4b350;
 }
 .navbar {
-    padding-top: 0px;
+  padding-top: 0px;
 }
-nav ul, footer ul {
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+nav ul,
+footer ul {
+  padding: 0px;
+  list-style: none;
+  font-weight: bold;
 }
-nav ul li, footer ul li {
-    display: inline;
-    padding: 10px;
+nav ul li,
+footer ul li {
+  display: inline;
+  padding: 10px;
 }
 
-ul.icons>li {
-    margin: 15px;
+ul.icons > li {
+  margin: 15px;
 }
 
 #name-jumbotron h1 {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 /* name div */
 
 #name-jumbotron {
-    margin: 60px auto 60px auto;
-    font-weight: bold;
-    color: #F4B350;
-    /*background-color: #4B77BE*/;
+  margin: 60px auto 60px auto;
+  font-weight: bold;
+  color: #f4b350;
+  /*background-color: #4B77BE*/
 }
 
 /* about section */
 
 #about-section .about-title {
-    padding-top: 0px;
-    margin-top: 30px;
+  padding-top: 0px;
+  margin-top: 30px;
 }
-
 
 /* images */
 img.icon-img {
-    max-height: 50px;
-    max-width: 37px;
+  max-height: 50px;
+  max-width: 37px;
 }
 img.rakeem-pic {
-    max-height: 250px;
-    max-width: 250px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  max-height: 250px;
+  max-width: 250px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 img.projects {
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 100px;
 }
 
 /* projects section */
 #project-section small {
-    display: flex;
-    font-size: 10px;
+  font-size: 10px;
 }
 
-.project-images {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 50%;
+div.project-images {
 }
-
- .flex-child {
-    flex-flow: row;
-    /* max-width: 50%; */
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+.flex-child {
+  display: inline;
 }
 
 p.image-description {
-    text-align: center;
+  text-align: center;
 }
 /* links */
 .social-links {
-    color: #F4D03F;
+  color: #f4d03f;
 }
 
 .nav-icon:hover {
-    color: #F4D03F;
+  color: #f4d03f;
 }
 a:hover {
-    text-decoration: none;
-    color: #F4D03F;
+  text-decoration: none;
+  color: #f4d03f;
 }
 
-.navbar a, .nav-header.icon {
-    font-size: 1.5em;
+.navbar a,
+.nav-header.icon {
+  font-size: 1.5em;
 }
 
 /* lists */
 ul.posts {
-    margin: 20px auto 40px;
-    font-size: 1.5em;
+  margin: 20px auto 40px;
+  font-size: 1.5em;
 }
 
 ul.posts li {
-    list-style: none;
+  list-style: none;
 }
 
 /* footer */
-.fa-twitter, .fa-twitter-square {
-    color: #00aced
+.fa-twitter,
+.fa-twitter-square {
+  color: #00aced;
 }
 
-.fa-github, .fa-github-square {
-    color: black;
+.fa-github,
+.fa-github-square {
+  color: black;
 }
 
 .fa-linkedin {
-    color: black;
+  color: black;
 }
-
 
 /* Post pages */
 .post-link a {
-    color: #F4D03F;
+  color: #f4d03f;
 }
 .post-header-font {
-    color: #F4B350;
+  color: #f4b350;
 }
