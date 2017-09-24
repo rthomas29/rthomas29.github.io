@@ -9,7 +9,10 @@ body {
   background-color: #f2f1ef;
 }
 
-p.about-blurb {
+.about-blurb {
+
+}
+.about-blurb p {
   font-size: 2em;
   line-height: 2em;
 }
@@ -91,13 +94,17 @@ ul.icons > li {
 }
 
 /* images */
+
+div.pic-div {
+  margin-left: 200px !important;
+}
 img.icon-img {
   max-height: 50px;
   max-width: 37px;
 }
 img.rakeem-pic {
-  max-height: 250px;
-  max-width: 250px;
+  max-height: 400px;
+  max-width: 405px;
 }
 /* projects section */
 #project-section small {
@@ -150,4 +157,10 @@ ul.posts li {
 
 .post-header-font {
   color: #4183d7;
+}
+
+.post {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
