@@ -8,6 +8,7 @@ description: A blog about technology and stuff related
 # if it's an external image, update below for true
 # better with square images
 external-image: false
+
 picture: //assets/images/Rakeem.jpg
 
 # If you want to include your resume, set to true
@@ -16,7 +17,7 @@ resume: true
 resume-external: false
 resume-url: assets/Rakeem Tech Resume.pdf
 
-url: https://www.rakeemthomas.com
+url: //www.rakeemthomas.com
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
@@ -56,7 +57,7 @@ authors:
     rakeemthomas:
         name: Rakeem Thomas
         external-image: false
-        picture: assets/images/Rakeem.jpg
+        picture: //assets/images/Rakeem.jpg
         twitter: rthom4s
 
 # do you want a larger site? change the option below
