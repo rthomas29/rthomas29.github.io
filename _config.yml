@@ -9,7 +9,7 @@ description: A blog about technology and stuff related
 # better with square images
 external-image: false
 
-picture: //assets/images/Rakeem.jpg
+picture: /assets/images/Rakeem.jpg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
