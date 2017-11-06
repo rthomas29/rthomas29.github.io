@@ -1,0 +1,24 @@
+---
+layout: post
+comments: true
+title: "......and we're back!"
+image: /assets/images/Rakeem.jpg
+headerImage: false
+date: 2017-08-28
+category: blog
+
+---
+
+I'm just gonna start by saying that we should all just ignore my exactly 7 month layoff of writing this blog. <!--excerpt-stop-->I have discarded so many post attempts, and definitely did not allocate adequate time to focus on it. However, we're past that! No more excuses! We're back to business.
+
+### Well, where _have_ you been?
+
+Good question! Since my last update, I've [recorded a course with Treehouse](https://teamtreehouse.com/library/building-your-resume), helped to manage our first ever [CodeCamp](https://launchcode.org/codecamp-sfl), and continued to improve my knowledge of web development through utilization of resources, like [FrontEndMasters](https://frontendmasters.com).
+
+
+I realized that I was basically suffering from good ol' **analysis paralysis**. I'd start what seemed to be a solid blog post, but scrap it because it wasn't expansive enough. This is the same behavior I have when it comes to projects! I'll start with something small and manageable, then I'll quickly get lost in the weeds due to lack of planning. I tend to jump into my coding before I've solved the problem, which just leads to a highly inefficient development process. Well, the first part is admitting you have a problem. Now, it's time to change the bad habits, for the better!
+
+### Dude, are you gonna disappear again?
+
+No, I won't. I've learned that it's better to publish something..anything, rather than not doing anything at all. I'm constantly reading new information and filling my head with these nuggets of wisdom, so it'll be great to use this blog as a platform to keep track of all that knowledge goodness. My goal is to create a blog post explaining something new I've learned - whether it relates to a programming language, tools/technology, or concept that I'm trying to wrap my mind around. Hopefully, I can keep up and publish posts more frequently. I'm looking forward to sharing my thoughts with all of you. Until next time!
+

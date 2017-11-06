@@ -1,22 +1,29 @@
 ---
-layout: default
-title: The Mind of Rakeem
+# blog page must be named index.html and in its own folder to support pagination
+# https://jekyllrb.com/docs/pagination/
+layout: page
+title: Blog
 ---
-<nav id="myNav" class="navbar nav-header text-center">
-		<ul>
-			<span class="pull-left"><li><a href="../../../../index.html"><i class="fa fa-home fa-2x nav-icon" aria-hidden="true"></i></a></li></span>
-		</ul>
-	</nav>
+<section class="list">
+	{% if site.posts.size == 0 %}
+		<p class="text-center">Nothing published yet!</p>
+	{% elsif site.paginate %}
+		{% for post in paginator.posts %}
+			{% if post.category == 'blog' %}
+				{% if post.hidden != true %}
+					{% include blog-post.html %}
+				{% endif %}
+			{% endif %}
+		{% endfor %}
 
-		<h1 class="text-center section-header post-header-font">{{ page.title }}</h1>
-	<div class="page-meat">
-			<div class="container">
-				<ul class="posts">
-						{% for post in site.posts %}
-							<h3>{{ post.title }} - {{ post.date | date_to_string }}</h3>
-			    		<li>
-			    		<small class="post-link">{{ post.excerpt }}<a href="{{ post.url }}"><i class="fa fa-book fa-2x" aria-hidden="true"></i> More...</a></small></li>
-		  			{% endfor %}
-				</ul>
-		</div>
-	</div>
+		{% include pagination.html%}
+	{% else %}
+		{% for post in site.posts %}
+			{% if post.category == 'blog' %}
+				{% if post.hidden != true %}
+					{% include blog-post.html %}
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+	{% endif %}
+</section>
