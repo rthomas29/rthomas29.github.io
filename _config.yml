@@ -17,7 +17,7 @@ resume: true
 resume-external: false
 resume-url: assets/Rakeem Tech Resume.pdf
 
-url: https://www.rakeemthomas.com
+url: https://www.rakeemthomas.com/
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
