@@ -16,7 +16,7 @@ resume: true
 resume-external: false
 resume-url: assets/Rakeem Tech Resume.pdf
 
-url: https://www.rakeemthomas.com
+url: www.rakeemthomas.com
 
 permalink: /:title/
 
