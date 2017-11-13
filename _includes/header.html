@@ -1,4 +1,4 @@
-{% if page.title == "Home"
+={% if page.title == "Home"
    or page.title == "Blog"
    or page.title == "Projects"
    or page.title == "Tags"
@@ -7,8 +7,8 @@
 {% if showHeader == true %}
     <header class="header-home {% if site.animation %}animated{% endif %}">
         {% if site.about %}
-            <a class="link" href="//about">
-                <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+            <a class="link" href="/about">
+                <img class="selfie" alt="{{ site.name }}" src="https://rakeemthomas.com/assets/images/Rakeem.jpg" />
             </a>
         {% else %}
             <span class="link">
