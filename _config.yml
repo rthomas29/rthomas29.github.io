@@ -8,8 +8,8 @@ description: A blog about technology and stuff related
 
 # if it's an external image, update below for true
 # better with square images
-external-image: true
-picture: /assets/images/Rakeem.jpg/
+external-image: false
+picture: assets/images/rakeem.jpg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -17,7 +17,7 @@ resume: true
 resume-external: false
 resume-url: assets/Rakeem Tech Resume.pdf
 
-# url: rakeemthomas.com
+url: https://rakeemthomas.com
 
 permalink: /:title/
 
