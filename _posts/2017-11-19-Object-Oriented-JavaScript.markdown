@@ -50,7 +50,7 @@ We can also create new objects in JavaScript by utilizing the `new` operator. In
   myCar.make = 'Honda';
   myCar.model = 'Civic';
 ```
-In my next post, I'll dig deeper into utilizing the new operator and instantiating objects based on constructor functions.
+In my next post, I'll dig deeper into prototype-based inheritance and how inheritance works in JavaScript.
 
 
 
