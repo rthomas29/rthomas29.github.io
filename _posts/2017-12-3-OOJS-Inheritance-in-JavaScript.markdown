@@ -35,8 +35,11 @@ const myCar = new Car ('Honda', 'Civic', 2016);
 console.log(myCar.make) // 'Honda'
 console.log(myCar.year) // 2016
 ```
-By convention, constructor functions are given an uppercase name. However, a constructor will serve its purpose, even if it isn't capitalized.
+By convention, constructor functions are given an uppercase name. However, a constructor will serve its purpose, even if it is not capitalized.
 
 Now, let's talk about what makes JavaScript special.
 
 ## The Prototype Chain
+If you have played with JavaScript for more than a couple of days, you have probably benefited from the flexibility of the prototype chain. Let us take a closer look.
+
+Whenever you create an object,
