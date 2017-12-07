@@ -4,7 +4,7 @@ comments: true
 title: "OOJS: Inheritance in JavaScript"
 image: /assets/images/Rakeem.jpg
 headerImage: false
-date: 2017-12-03
+date: 2017-12-06
 category: blog
 
 ---
@@ -22,7 +22,7 @@ class Car {
 var myCar = new Car();
 ```
 
-Prototype-based inheritance allows you more flexibility by enabling you to instantiate new objects based on other objects. There is no concept of a class (at least in a traditional sense). Instead of a class, *constructor functions* are used to create new objects with specified values and functionality.
+Prototypal inheritance allows you more flexibility by enabling you to instantiate new objects based on other objects. There is no concept of a class (at least in a traditional sense). Instead of a class, *constructor functions* are used to create new objects with specified values and functionality.
 
 ```javascript
 const Car = function (make, model, year) {
@@ -42,4 +42,12 @@ Now, let's talk about what makes JavaScript special.
 ## The Prototype Chain
 If you have played with JavaScript for more than a couple of days, you have probably benefited from the flexibility of the prototype chain. Let us take a closer look.
 
-Whenever you create an object,
+At a high level, most values in JavaScript can be considered objects. This is how you are able to call the `splice()` method on any array, or invoke `toUpperCase` on any string variable you create. If a method or property doesn't exist on the current object, JavaScript will look at the object's prototype to see if the method or property exists there. It will continue looking up the prototype chain until it finds the functionality it needs.
+
+```javascript
+  const myName = 'Rakeem';
+  myName.slice(1, 3); // 'ak'
+  Object.getPrototypeOf(myName); // String prototype object
+```
+
+In the example above, `myName` is a custom variable that is of type `string`. After creating the variable, we invoke the slice method, which does not exist in the myName variable. JavaScript will see that the method does not exist, so it looks at myName's prototype, which is String.prototype. If you execute `Object.getPrototypeOf(myName)` in your terminal, you can see the prototype for yourself. If you expand the object, you will see familiar methods, like length, charAt, slice, etc. Every string variable that you create will have the String prototype as its prototype. This functionality works for all primitive data types in JavaScript.
