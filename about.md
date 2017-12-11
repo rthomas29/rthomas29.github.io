@@ -20,6 +20,6 @@ layout: page
 <h2>Projects</h2>
 
 <ul>
-	<li><a href="https://treehouse-lookup.herokuapp.com/">Treehouse Lookup</a></li>
-	<li><a href="https://github.com/rthomas29/local-weather">Local Weather</a></li>
+	<li><a href="https://treehouse-lookup.herokuapp.com/">Treehouse Lookup (Heroku)</a></li>
+	<li><a href="https://local-weather-rakeem.herokuapp.com/">Local Weather (Heroku)</a></li>
 </ul>
