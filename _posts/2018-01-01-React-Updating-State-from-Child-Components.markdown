@@ -24,7 +24,7 @@ To manipulate this data and render it from your Child component, you have to acc
   render() {
     return (
       <div>
-        <p> I'm {this.props.name} and I am {this.props.age} years old.
+        <p> I'm {this.props.name} and I am {this.props.age} years old.</p>
       </div>
     )
   }
@@ -97,7 +97,7 @@ Handling events in React is similar to handling events in HTML, with a couple di
     render() {
       return (
         <div>
-          <input type="text" onChange={this.props.ourInputFunction}>
+          <input type="text" onChange={this.props.ourInputFunction} />
         </div>
       )
     }
