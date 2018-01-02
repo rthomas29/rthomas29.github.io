@@ -8,13 +8,13 @@ date: 2018-01-01
 category: blog
 ---
 
-I've been having a lot of fun learning React and how it fits into front-end development in 2018. Especially with tools like create-react-app, you can have an app up and running in no time at all.
+I've been having a lot of fun learning React and how it fits into front-end development in 2018. Especially with tools like create-react-app, you can have an app up and running in no time at all. While there's a lot to learn within the React ecosystem, this post will focus on updating the state of a Parent component from a Child component.
 
 ### What is State?
 
 If you've spent any time with React, you know that **state** is one of the main building blocks of any application. State is the current value or status of variables within components that are rendered to your view. For example, if you have a `Button` component and you would like to keep track of the number of times it is clicked, the number of clicks should be represented as a property on the `Button` component's state object. It should be given a descriptive name, something like numberOfClicks would suffice.
 
-In React, if you want to pass data between components, **data flows down** from Parent to Child components. Parent components are just components that house other components, those being Child components. The mechanism that provides that functionality is the use of **props**. Props is an object that holds any variables that are passed from Parent to Child. If you wanted to pass some arbitrary information to a Child component from the state of your Parent component, like name and age, it would look something like this:
+In React, if you want to pass data between components, **data flows down** from Parent to Child components. Parent components are just components that house other components, those being Child components. The way that we pass data down to Child components is through **props**. Props is an object that holds any variables that are passed from Parent to Child. If you wanted to pass some arbitrary information to a Child component from the state of your Parent component, like name and age, it would look something like this:
 ```jsx
 <Child name={this.state.name} age={this.state.age} />
 ```
@@ -46,10 +46,10 @@ class Parent extends Component {
     this.handleInputChange = this.handleInputChange.bind(this);
   }
   state = {
-    name: '', // setting initial value
+    name: '', // setting initial value of our name state
   }
   handleInputChange(event) {
-    event.preventDefault(); // this stops the page from refreshing
+    event.preventDefault();
     this.setState({ name: event.target.value })
   }
 }
@@ -58,7 +58,7 @@ Let's dig into this code.
 ```javascript
  this.handleInputChange = this.handleInputChange.bind(this);
 ```
-This block of code is ensuring that regardless of where `handleInputChange()` is called, the context will always be the Parent component. This will be extremely important in the next steps.
+This block of code is ensuring that regardless of where `handleInputChange()` is called, the context will always be the Parent component. In other words, our `this.setState()` method will only set the state of `name` on the Parent class. This will be extremely important in the next steps.
 
 ```javascript
   handleInputChange(event) {
@@ -104,7 +104,7 @@ Handling events in React is similar to handling events in HTML, with a couple di
   }
 ```
 ##### Note:
-Be aware that you must use the variable name that you passed as props in the Parent component. As you see above, I used `this.props.ourInputFunction` instead of `this.props.handleInputChange` because that's the name we used in the above example.
+Be aware that you must use the variable name that you passed as props in the Parent component. As you see above, I used `this.props.ourInputFunction` instead of `this.props.handleInputChange` because that's the name we used in the above example. Also, you do not want to add the `()` at the end of `this.props.ourInputFunction`. In JSX, anything inside of curly braces will be resolved immediately, and you do not want the function to be called until the `onChange` event is triggered.
 
 ### TL;DR
 I learned how to update state in a Parent component from within a Child component. Here's how.
@@ -114,3 +114,46 @@ I learned how to update state in a Parent component from within a Child componen
 2. Pass said function to the Child component, as props.
 
 3. Use React event handling, specifically `onChange` event, and handle this event using the function you passed as props from Parent.
+
+### Parent class
+```javascript
+class Parent extends Component {
+  constructor() {
+    super();
+    this.handleInputFunction = this.handleInputFunction.bind(this);
+  }
+  state = {
+    name: '',
+  };
+  handleInputFunction(e) {
+    e.preventDefault();
+    this.setState({ name: e.target.value });
+  }
+  render() {
+    return (
+      <div>
+        <h1>Hello, {this.state.name}</h1>
+        <Child ourInputFunction={this.handleInputFunction} />
+      </div>
+    );
+  }
+}
+```
+### Input (Child) component
+
+```javascript
+class Input extends Component {
+  constructor(props) {
+    super();
+  }
+  render() {
+    return (
+      <div>
+        <input type="text" onChange={this.props.ourInputFunction} />
+      </div>
+    );
+  }
+}
+```
+
+![Working GIF demo](http://www.giphy.com/gifs/xULW8t5l0TtDohoy7S)
