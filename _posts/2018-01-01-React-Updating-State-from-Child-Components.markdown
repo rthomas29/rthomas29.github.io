@@ -133,7 +133,7 @@ class Parent extends Component {
     return (
       <div>
         <h1>Hello, {this.state.name}</h1>
-        <Child ourInputFunction={this.handleInputFunction} />
+        <Input ourInputFunction={this.handleInputFunction} />
       </div>
     );
   }
