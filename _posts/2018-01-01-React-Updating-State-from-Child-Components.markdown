@@ -39,7 +39,7 @@ Something I initially had trouble wrapping my mind around was updating state of 
 
 #### Step 1: Create a function to handle input change and bind it to the Parent class context.
 
-```javascript
+```jsx
 class Parent extends Component {
   constructor () {
     super();
@@ -60,7 +60,7 @@ Let's dig into this code.
 ```
 This block of code is ensuring that regardless of where `handleInputChange()` is called, the context will always be the Parent component. In other words, our `this.setState()` method will only set the state of `name` on the Parent class. This will be extremely important in the next steps.
 
-```javascript
+```jsx
   handleInputChange(event) {
     event.preventDefault();
     this.setState({ name: event.target.value })
@@ -72,7 +72,7 @@ When triggered, `handleInputChange()` will set the state of `name` to be the val
 
 In JavaScript, functions are first-class citizens, so we are able to pass them around as arguments. Now, since JSX allows you to freely use JavaScript within HTML, most rules apply. We can pass our `handleInputChange()` as props to our Input component.
 
-```javascript
+```jsx
 // in our Parent component
 render() {
   return (
@@ -89,7 +89,7 @@ The h1 tag is where our name will eventually show up, once updated. For now, it 
 
 Handling events in React is similar to handling events in HTML, with a couple differences. The main difference that pertains to us is that React events must be `camelCased`. In our case, we're using the `onChange` event to listen for changes that occur in our Input component, and we will use handleInputChange to handle that event.
 
-```javascript
+```jsx
   class Input extends Component {
     constructor (props) {
       super();
@@ -116,7 +116,7 @@ I learned how to update state in a Parent component from within a Child componen
 3. Use React event handling, specifically `onChange` event, and handle this event using the function you passed as props from Parent.
 
 ### Parent class
-```javascript
+```jsx
 class Parent extends Component {
   constructor() {
     super();
@@ -141,7 +141,7 @@ class Parent extends Component {
 ```
 ### Input (Child) component
 
-```javascript
+```jsx
 class Input extends Component {
   constructor(props) {
     super();
@@ -155,5 +155,5 @@ class Input extends Component {
   }
 }
 ```
-
-![Working GIF demo](http://www.giphy.com/gifs/xULW8t5l0TtDohoy7S)
+As you can see, we can now update the state of our Parent component from our child Input component.
+![Working GIF demo](../../assets/images/blog-demo-forreal.gif/)
