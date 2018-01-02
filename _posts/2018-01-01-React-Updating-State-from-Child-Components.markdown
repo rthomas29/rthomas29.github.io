@@ -115,7 +115,7 @@ I learned how to update state in a Parent component from within a Child componen
 
 3. Use React event handling, specifically `onChange` event, and handle this event using the function you passed as props from Parent.
 
-### Parent class
+### Parent component
 ```jsx
 class Parent extends Component {
   constructor() {
