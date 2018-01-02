@@ -156,4 +156,4 @@ class Input extends Component {
 }
 ```
 As you can see, we can now update the state of our Parent component from our child Input component.
-![Working GIF demo](../../assets/images/blog-demo-forreal.gif/)
+![Working GIF demo](https://rakeemthomas.com/assets/images/blog-demo-forreal.gif/)
