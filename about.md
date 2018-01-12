@@ -73,7 +73,7 @@ layout: page
 <div class="project-wrapper">
 	<div>
 		<p class="center">
-			<a href="https://local-weather-rakeem.herokuapp.com/">
+			<a href="https://github.com/rthomas29/local-weather">
 				<img src="/assets/images/local-weather-screenshot.png" alt="local weather screenshot" />
 			</a>
 				Local Weather
@@ -81,7 +81,7 @@ layout: page
 	</div>
 		<div>
 		<p class="center">
-			<a href="https://treehouse-lookup.herokuapp.com/">
+			<a href="https://github.com/rthomas29/treehouse-lookup">
 				<img src="/assets/images/treehouse-lookup-screenshot.png" alt="treehouse lookup screenshot" />
 			</a>
 				Treehouse Lookup
