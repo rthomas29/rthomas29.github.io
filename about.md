@@ -71,6 +71,14 @@ layout: page
 <h2>Projects</h2>
 
 <div class="project-wrapper">
+<div>
+		<p class="center">
+			<a href="https://github.com/rthomas29/CodeTest">
+				<img src="/assets/images/CodeTestSS.png" alt="CodeTest" />
+			</a>
+				CodeTest
+		</p>
+	</div>
 	<div>
 		<p class="center">
 			<a href="https://github.com/rthomas29/local-weather">
