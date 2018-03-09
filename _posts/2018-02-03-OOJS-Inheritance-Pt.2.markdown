@@ -106,4 +106,6 @@ anotherNewUser.logAge(); // I am 27 years old.
 
 ### Which method should I use?
 
-I suggest learning and understanding prototypal inheritance and how it works before defaulting to classes in JavaScript. Classes are cleaner and requires less code to implement the same functionality achieved through constructor functions and adding methods to the prototype object of that function. However, it is vital to understand prototypal inheritance as it is one of the most powerful mechanisms within the JavaScript language. Before using classes, you should understand the `__proto__` property, the prototype object, and how it all works together when you create new objects through constructor functions.
+I suggest learning and understanding prototypal inheritance and how it works before defaulting to classes in JavaScript. Classes are cleaner and require less code to implement the same functionality achieved through constructor functions and adding methods to the prototype object of that function.
+
+However, it is vital to understand prototypal inheritance as it is one of the most powerful mechanisms within the JavaScript language. Before using classes, you should understand the `__proto__` property, the prototype object, and how it all works together when you create new objects through constructor functions.
