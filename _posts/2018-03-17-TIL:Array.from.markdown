@@ -1,0 +1,39 @@
+---
+layout: post
+comments: true
+title: "TIL: Array.from()"
+image: /assets/images/Rakeem.jpg
+headerImage: false
+date: 2018-03-17
+category: blog
+---
+
+According to MDN docs, the `Array.from()` method creates a new `Array` instance from an array-like or iterable object. In other words, new `Array` instances can be created based on
+arguments passed to `from()`.
+
+Lets say we create a function `makeArray` that has one parameter `n` and returns an array of numbers from 1 to `n`. We can do this in an imperative fashion, like so:
+
+```javascript
+const makeArray = n => {
+  const output = [];
+  for (let i = 1; i <= n; i++) {
+    output.push(i);
+  }
+  return output;
+}
+
+console.log(makeArray(5)); // [1, 2, 3, 4, 5]
+```
+
+However, we know that writing declarative code is the wave, so this is where `Array.from()` may come in.
+
+```javascript
+const makeArray = n => Array.from({ length: n }, (value, index) => ++index);
+console.log(makeArray(5)); // [1, 2, 3, 4, 5]
+```
+
+Per MDN, one of the parameters that `Array.from()` accepts is an array-like object (objects with a length property and indexed elements). This is the blueprint that tells `Array.from()` what properties and/or values to give to the new `Array` instance. In the example above, we're choosing to pass an object with a length property of `n`.
+
+`Array.from()` also takes a map function as an argument that allows you to perform some functionality on each element of the new `Array` instance. In this case, our map function is adding 1 to each index, then assigning that value to each element. The first argument of the callback will always correspond to the value within each element of the `Array`, and the second argument will always refer to the current index. In conclusion, `Array.from()` is a cool, declarative way to dynamically create new arrays with various properties and values.
+
+
