@@ -6,7 +6,7 @@ layout: page
 
 <h1 class="display-2">Hey, I'm Rakeem.</h1>
 
-<p class="lead">I'm always down for productive conversation and positive energy. I enjoy solving problems and implementing solutions on the web. Full Stack JavaScript is my current toolkit, and I love adding new, shiny tools to that set. <em>I'm looking for challenging opportunities to learn and grow as a web developer, and as a teammate. </em>You can find me on <a href='https://www.twitter.com/rthom4s'>Twitter</a> and <a href='https://www.linkedin.com/in/rakeemthomas/'>LinkedIn</a>. Let's work!</p>
+<p class="lead">I'm always down for productive conversation and positive energy. I enjoy solving problems and implementing solutions on the web. I primarily work with JavaScript, but I am open to learning new languages and their tools. <em>I'm looking for challenging opportunities to learn and grow as a teammate and engineer. </em>You can find me on <a href='https://www.linkedin.com/in/rakeemthomas/'>LinkedIn</a> and <a href='https://www.twitter.com/rthom4s'>Twitter</a>. Let's work!</p>
 
 <h2 class="skills-header">Core Skills</h2>
 <div class="grid-wrapper container">
@@ -31,23 +31,8 @@ layout: page
 	<div>
 			<img src="/assets/logos/express.svg" alt="ExpressJS logo" title="ExpressJS"/>
 	</div>
-	<div>
-			<img src="/assets/logos/jquery.svg" alt="jQuery logo" title="jQuery"/>
-	</div>
 </div>
 
-<h2>Software & Tools</h2>
-<div class="grid-wrapper">
-	<div>
-			<img src="/assets/logos/macosx.svg" alt="MacOSX logo" title="MacOSX"/>
-	</div>
-	<div>
-			<img src="/assets/logos/microsoft-windows.svg" alt="Windows logo" title="Windows"/>
-	</div>
-	<div>
-			<img src="/assets/logos/hyper.svg" alt="Hyper logo" title="Hyper"/>
-	</div>
-</div>
 <h2>Projects</h2>
 
 <div class="project-wrapper">
